@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+
+
+  
+<form action="" enctype="multipart/form-data" method="post">
+  <center>
+      <label>Email:</label><br>
+      <input type="email" id="userEmail" required="required"><br><br>
+  </center>
+  <center>
+      <label>Password:</label><br>
+      <input type="password" id="userPassword" required="required"><br><br>
+  </center>
+  <center>
+      <label>Confirm Password:</label><br>
+      <input type="password" id="confirmPassword" required="required"><br><br>
+  </center>
+  <center>
+      <button type="button" onclick="createUser();">SignUp</button>
+  </center>
+</form>
+
+<center>
+
+  <h1>Sign in with Google Account</h1>
+
+  <button type="button" id="googlebtn" onclick="GoogleLogin();">GoogleLogin</button>
+
+</center>
+
+
+
+<script src="https://www.gstatic.com/firebasejs/6.0.1/firebase.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyBn3dyBgO8zJhvyAK-Zee6LRB3xnKjX8Nw",
+    authDomain: "firebasseloginjs.firebaseapp.com",
+    projectId: "firebasseloginjs",
+    storageBucket: "firebasseloginjs.appspot.com",
+    messagingSenderId: "798013642642",
+    appId: "1:798013642642:web:70b86c5c93125b565d534b",
+    measurementId: "G-GTCPGCHQ3V"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+
+
+    <script src="main.js"></script>
+
+</body>
+</html>
